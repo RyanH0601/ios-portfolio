@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iOS Applications</title>
+  <meta name="description" content="A collection of private, offline-first iOS applications designed for security, communication, and daily organization." />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              900: '#312e81',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+<!-- Navigation -->
+<nav class="fixed top-0 w-full border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-md z-50">
+  <div class="max-w-6xl mx-auto px-6 py-3 flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0">
+    <!-- Brand Title -->
+    <div class="flex items-center space-x-3">
+      <img src="appstore-icon.png" alt="App Store Icon" class="w-12 h-12 rounded-2xl shadow-md border border-slate-800 object-cover" />
+      <span class="font-bold text-base tracking-tight text-white">Ryan Hatfield-Gold's iOS Applications</span>
+    </div>
+    <!-- Links (Below title on mobile, inline on desktop) -->
+    <div class="flex items-center space-x-6 text-sm font-medium">
+      <a href="#apps" class="text-slate-400 hover:text-white transition">Applications</a>
+      <a href="#overview" class="text-slate-400 hover:text-white transition">Overview</a>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-16 px-6 max-w-6xl mx-auto text-center">
+   
+    
+    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 max-w-3xl mx-auto leading-tight">
+      Private, offline-first tools for iOS.
+    </h1>
+    
+    <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+      Applications built to perform reliably without network dependencies, account requirements, or personal data tracking.
+    </p>
+  </section>
+
+  <!-- Apps Grid Section -->
+  <section id="apps" class="py-12 bg-slate-900/40 border-y border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <h2 class="text-3xl font-bold tracking-tight text-white mb-3">Applications</h2>
+        <p class="text-slate-400">Core utilities built for privacy, accessibility, and daily focus.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+  <!-- App 1: BurnSense -->
+  <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
+    <div>
+      <div class="flex items-center justify-between mb-6">
+        <img src="burnsense-icon.png" alt="BurnSense App Icon" class="w-14 h-14 rounded-2xl shadow-md border border-slate-800 object-cover" />
+        <span class="text-xs bg-amber-500/10 text-amber-400 px-2.5 py-1 rounded-full border border-amber-500/20 font-medium">Finance & Savings</span>
+      </div>
+      <h3 class="text-2xl font-bold text-white mb-2">BurnSense</h3>
+      <p class="text-slate-400 text-sm leading-relaxed mb-6">
+        Track recurring bills and discover instant savings. Toggle between essential expenses and optional cuts to see your true monthly bottom line.
+      </p>
+    </div>
+    <div>
+      <ul class="text-xs text-slate-400 space-y-2 mb-6 border-t border-slate-800/80 pt-4">
+        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-2"></span>Essential vs. Optional Savings Toggle</li>
+        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-2"></span>Scheduled Renewal Alerts</li>
+        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-2"></span>Monthly & Annual Spend Breakdown</li>
+      </ul>
+      <a href="https://apps.apple.com/us/app/burnsense-track-subscriptions/id6814006317" target="_blank" rel="noopener noreferrer" class="block text-center w-full bg-slate-900 hover:bg-slate-800 text-white border border-slate-700/80 text-sm font-semibold py-2.5 rounded-xl transition">
+        View on App Store
+      </a>
+    </div>
+  </div>
+
+  <!-- App 2: VaultQR -->
+  <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
+    <div>
+      <div class="flex items-center justify-between mb-6">
+        <img src="vaultqr-icon.png" alt="VaultQR App Icon" class="w-14 h-14 rounded-2xl shadow-md border border-slate-800 object-cover" />
+        <span class="text-xs bg-indigo-500/10 text-indigo-400 px-2.5 py-1 rounded-full border border-indigo-500/20 font-medium">Security</span>
+      </div>
+      <h3 class="text-2xl font-bold text-white mb-2">VaultQR</h3>
+      <p class="text-slate-400 text-sm leading-relaxed mb-6">
+        Encrypted local storage utility. Generates custom QR keys backed by native encryption without cloud sync or external servers.
+      </p>
+    </div>
+    <div>
+      <ul class="text-xs text-slate-400 space-y-2 mb-6 border-t border-slate-800/80 pt-4">
+        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-2"></span>Asymmetric Encryption</li>
+        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-2"></span>Native Camera Scanner</li>
+        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-2"></span>100% Offline Processing</li>
+      </ul>
+      <a href="https://apps.apple.com/us/app/vaultqr-hybrid-security/id6765917689" target="_blank" rel="noopener noreferrer" class="block text-center w-full bg-slate-900 hover:bg-slate-800 text-white border border-slate-700/80 text-sm font-semibold py-2.5 rounded-xl transition">
+        View on App Store
+      </a>
+    </div>
+  </div>
+
+  <!-- App 3: SpeakUp AAC -->
+  <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
+    <div>
+      <div class="flex items-center justify-between mb-6">
+        <img src="speakup-icon.png" alt="SpeakUp App Icon" class="w-14 h-14 rounded-2xl shadow-md border border-slate-800 object-cover" />
+        <span class="text-xs bg-emerald-500/10 text-emerald-400 px-2.5 py-1 rounded-full border border-emerald-500/20 font-medium">Accessibility</span>
+      </div>
+      <h3 class="text-2xl font-bold text-white mb-2">SpeakUp AAC</h3>
+      <p class="text-slate-400 text-sm leading-relaxed mb-6">
+        Augmentative and alternative communication app built with large, color-coded interface components to support rapid phrase selection and speech output.
+      </p>
+    </div>
+    <div>
+      <ul class="text-xs text-slate-400 space-y-2 mb-6 border-t border-slate-800/80 pt-4">
+        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-2"></span>High-Contrast Buttons</li>
+        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-2"></span>Local Speech Synthesis</li>
+        <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-2"></span>Zero Network Dependencies</li>
+      </ul>
+      <a href="https://apps.apple.com/us/app/speakup-aac/id6760866157" target="_blank" rel="noopener noreferrer" class="block text-center w-full bg-slate-900 hover:bg-slate-800 text-white border border-slate-700/80 text-sm font-semibold py-2.5 rounded-xl transition">
+        View on App Store
+      </a>
+    </div>
+  </div>
+
+</div>
+
+        
+
+  <!-- Overview Section -->
+  <section id="overview" class="py-20 px-6 max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-white mb-4">Architecture & Privacy</h2>
+    <p class="text-slate-400 leading-relaxed max-w-2xl mx-auto">
+      All applications run natively on-device. Data processing, storage, and notifications remain entirely local to your iPhone or iPad.
+    </p>
+  </section>
+
+  <!-- Footer -->
+
+</body>
+</html>
